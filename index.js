@@ -8,11 +8,7 @@ function KeenApi(config) {
 	if (!config) {
 		throw new Error("The 'config' parameter must be specified and must be a JS object.");
 	}
-	if (!config.projectId) {
-		throw new Error("The 'config' object must contain a 'projectId'.");
-	}
-
-	this.projectId = config.projectId;
+	
 	this.writeKey = config.writeKey;
 	this.readKey = config.readKey;
 	this.masterKey = config.masterKey;
